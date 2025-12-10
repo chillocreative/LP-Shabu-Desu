@@ -11,7 +11,7 @@ export const MENU_COURSES: MenuItem[] = [
     japaneseName: '特選和牛コース',
     description: 'The pinnacle of Japanese beef. Melt-in-your-mouth A5 Miyazaki Wagyu served with organic seasonal vegetables and our signature goma (sesame) sauce.',
     price: 'RM 550',
-    image: '/menu-wagyu.jpg'
+    image: '/menu-wagyu.jpg?v=3'
   },
   {
     id: 'c2',
@@ -19,7 +19,7 @@ export const MENU_COURSES: MenuItem[] = [
     japaneseName: 'ファミリーセット',
     description: 'Premium Berkshire pork known for its rich flavor and tenderness. Accompanied by forest mushrooms and citrus ponzu.',
     price: 'RM 380',
-    image: '/menu-pork.jpg'
+    image: '/menu-pork.jpg?v=3'
   },
   {
     id: 'c3',
@@ -27,7 +27,7 @@ export const MENU_COURSES: MenuItem[] = [
     japaneseName: '海鮮コース',
     description: 'Fresh Hokkaido scallops, tiger prawns, and daily market white fish. A delicate broth enhances the natural sweetness of the ocean.',
     price: 'RM 420',
-    image: '/menu-seafood.jpg'
+    image: '/menu-seafood.jpg?v=3'
   }
 ];
 

@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
           {/* Brand */}
           <div className="col-span-1 md:col-span-1">
             <div className="flex items-center gap-3 mb-6">
-              <img src="/logo_real.png" alt="Shabu Desu Logo" className="h-16 w-16 rounded-full" />
+              <img src="/logo_real.png?v=3" alt="Shabu Desu Logo" className="h-16 w-16 rounded-full" />
               <h3 className="font-serif text-2xl text-white">SHABU DESU</h3>
             </div>
             <p className="text-stone-500 font-light text-sm leading-relaxed mb-6">
@@ -57,7 +57,7 @@ const Footer: React.FC = () => {
           {/* Map (Visual only) */}
           <div className="col-span-1 h-48 bg-stone-900 border border-stone-800 relative overflow-hidden group">
             <img
-              src="/map-kepala-batas.png"
+              src="/map-kepala-batas.png?v=3"
               alt="Map"
               className="w-full h-full object-cover opacity-50 group-hover:opacity-70 transition-opacity"
             />

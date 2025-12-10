@@ -2,7 +2,7 @@ import React from 'react';
 
 const Experience: React.FC = () => {
   return (
-    <section id="experience" className="relative py-32 bg-fixed bg-cover bg-center" style={{ backgroundImage: "url('/experience-bg.jpg')" }}>
+    <section id="experience" className="relative py-32 bg-fixed bg-cover bg-center" style={{ backgroundImage: "url('/experience-bg.jpg?v=3')" }}>
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-stone-950/90"></div>
 

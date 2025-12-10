@@ -26,7 +26,7 @@ const Navbar: React.FC = () => {
       <div className="container mx-auto px-6 flex justify-between items-center">
         {/* Logo */}
         <a href="#" className="flex items-center gap-3 group">
-          <img src="/logo_real.png" alt="Shabu Desu Logo" className="h-20 w-auto rounded-full" />
+          <img src="/logo_real.png?v=3" alt="Shabu Desu Logo" className="h-20 w-auto rounded-full" />
           <div className="flex flex-col items-start">
             <span className="font-serif text-xl md:text-2xl tracking-widest text-gold-400 group-hover:text-white transition-colors">SHABU DESU</span>
             <span className="text-[8px] md:text-[10px] uppercase tracking-[0.3em] text-stone-400 group-hover:text-gold-400 transition-colors">Premium Hotpot</span>

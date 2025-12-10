@@ -31,7 +31,7 @@ const Philosophy: React.FC = () => {
             </p>
 
             <div className="pt-4">
-              <img src="/signature-stamp.png" alt="Signature" className="opacity-50 invert w-24 h-auto" />
+              <img src="/signature-stamp.png?v=3" alt="Signature" className="opacity-50 invert w-24 h-auto" />
             </div>
           </motion.div>
 
@@ -46,7 +46,7 @@ const Philosophy: React.FC = () => {
                 className="mt-12"
               >
                 <img
-                  src="/shabu-pot.png"
+                  src="/shabu-pot.png?v=3"
                   alt="Atmosphere"
                   className="w-full h-80 object-cover rounded-sm grayscale hover:grayscale-0 transition-all duration-700"
                 />
@@ -58,7 +58,7 @@ const Philosophy: React.FC = () => {
                 transition={{ duration: 0.8, delay: 0.4 }}
               >
                 <img
-                  src="/wagyu-plate.png"
+                  src="/wagyu-plate.png?v=3"
                   alt="Chef Preparation"
                   className="w-full h-80 object-cover rounded-sm grayscale hover:grayscale-0 transition-all duration-700"
                 />
