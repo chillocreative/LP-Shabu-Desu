@@ -2,6 +2,8 @@ import React from 'react';
 import { ChevronDown } from 'lucide-react';
 import { motion } from 'framer-motion';
 
+import { Link } from 'react-router-dom';
+
 const Hero: React.FC = () => {
   return (
     <section className="relative h-screen w-full overflow-hidden">
@@ -48,6 +50,14 @@ const Hero: React.FC = () => {
           <p className="text-stone-300 font-light text-lg md:text-xl leading-relaxed">
             Experience the exquisite Japanese tradition of swish-swish hotpot with A5 Wagyu and artisanal broths.
           </p>
+          <div className="flex justify-center gap-6 mt-10">
+            <a href="#menu" className="border border-gold-500 text-gold-500 px-8 py-3 rounded-full hover:bg-gold-500 hover:text-stone-950 transition-all uppercase tracking-widest text-sm font-semibold">
+              View Our Menu
+            </a>
+            <Link to="/reservation" className="bg-red-700 text-white border border-red-700 px-8 py-3 rounded-full hover:bg-red-600 transition-all uppercase tracking-widest text-sm font-semibold">
+              Book Reservation
+            </Link>
+          </div>
         </motion.div>
 
         <motion.div

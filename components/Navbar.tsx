@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -44,9 +45,9 @@ const Navbar: React.FC = () => {
               {link.name}
             </a>
           ))}
-          <a href="#reserve" className="border border-gold-500 text-gold-500 px-6 py-2 hover:bg-gold-500 hover:text-stone-900 transition-all duration-300 text-sm uppercase tracking-wider">
-            Reserve
-          </a>
+          <Link to="/reservation" className="bg-red-700 text-white border border-red-700 px-6 py-2 rounded-full hover:bg-red-600 transition-all duration-300 text-sm uppercase tracking-wider font-semibold">
+            Book Reservation
+          </Link>
         </div>
 
         {/* Mobile Toggle */}
