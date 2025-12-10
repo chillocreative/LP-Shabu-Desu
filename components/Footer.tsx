@@ -8,7 +8,10 @@ const Footer: React.FC = () => {
         <div className="grid md:grid-cols-4 gap-12 mb-16">
           {/* Brand */}
           <div className="col-span-1 md:col-span-1">
-            <h3 className="font-serif text-2xl text-white mb-6">SHABU DESU</h3>
+            <div className="flex items-center gap-3 mb-6">
+              <img src="/logo_real.png" alt="Shabu Desu Logo" className="h-16 w-16 rounded-full" />
+              <h3 className="font-serif text-2xl text-white">SHABU DESU</h3>
+            </div>
             <p className="text-stone-500 font-light text-sm leading-relaxed mb-6">
               An authentic Japanese hotpot experience honoring tradition, quality, and the art of hospitality.
             </p>
@@ -24,11 +27,11 @@ const Footer: React.FC = () => {
             <div className="space-y-4">
               <div className="flex items-start gap-3 text-stone-400 font-light text-sm">
                 <MapPin size={16} className="mt-1 text-gold-600" />
-                <span>123 Culinary District,<br/>Tokyo Prefecture, JP 100-0001</span>
+                <span>Bertam, Kepala Batas,<br />Penang, MY 13200</span>
               </div>
               <div className="flex items-center gap-3 text-stone-400 font-light text-sm">
                 <Phone size={16} className="text-gold-600" />
-                <span>+81 3-5555-0199</span>
+                <span>+60 12-345 6789</span>
               </div>
             </div>
           </div>
@@ -53,9 +56,9 @@ const Footer: React.FC = () => {
 
           {/* Map (Visual only) */}
           <div className="col-span-1 h-48 bg-stone-900 border border-stone-800 relative overflow-hidden group">
-            <img 
-              src="https://picsum.photos/400/300?grayscale&blur=2" 
-              alt="Map" 
+            <img
+              src="/map-kepala-batas.png"
+              alt="Map"
               className="w-full h-full object-cover opacity-50 group-hover:opacity-70 transition-opacity"
             />
             <div className="absolute inset-0 flex items-center justify-center">
@@ -65,7 +68,7 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="border-t border-stone-900 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-stone-600 text-xs">© 2024 SHABU DESU. All Rights Reserved.</p>
+          <p className="text-stone-600 text-xs">© 2025 SHABU DESU. All Rights Reserved.</p>
           <div className="flex gap-6 text-stone-600 text-xs uppercase tracking-wider">
             <a href="#" className="hover:text-stone-400 transition">Privacy</a>
             <a href="#" className="hover:text-stone-400 transition">Terms</a>

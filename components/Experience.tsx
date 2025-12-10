@@ -2,7 +2,7 @@ import React from 'react';
 
 const Experience: React.FC = () => {
   return (
-    <section id="experience" className="relative py-32 bg-fixed bg-cover bg-center" style={{ backgroundImage: "url('https://picsum.photos/1920/1080?random=20')" }}>
+    <section id="experience" className="relative py-32 bg-fixed bg-cover bg-center" style={{ backgroundImage: "url('/experience-bg.jpg')" }}>
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-stone-950/90"></div>
 
@@ -13,7 +13,7 @@ const Experience: React.FC = () => {
             The name "Shabu Shabu" comes from the sound the ingredients make as you gently swish them through the bubbling broth.
             It is an interactive dining experience that slows down time, encouraging conversation and mindfulness.
           </p>
-          
+
           <div className="grid md:grid-cols-3 gap-8 mt-12">
             {[
               { title: "01. Boil", desc: "Bring the kombu dashi broth to a gentle simmer." },

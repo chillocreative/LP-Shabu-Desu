@@ -6,10 +6,10 @@ const Hero: React.FC = () => {
   return (
     <section className="relative h-screen w-full overflow-hidden">
       {/* Background Image with Overlay */}
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-fixed scale-110"
         style={{
-          backgroundImage: "url('https://picsum.photos/1920/1080?random=10')", 
+          backgroundImage: "url('/hero-shabu.jpg')",
         }}
       >
         <div className="absolute inset-0 bg-black/60"></div>
@@ -24,11 +24,12 @@ const Hero: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.2 }}
         >
+          <img src="/logo_real.png" alt="Shabu Desu Logo" className="w-32 h-32 md:w-40 md:h-40 mb-8 mx-auto rounded-full shadow-2xl shadow-red-900/20" />
           <h2 className="text-gold-400 uppercase tracking-[0.3em] text-sm md:text-base mb-4 font-light">
             Welcome to the sanctuary of
           </h2>
         </motion.div>
-        
+
         <motion.h1
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}

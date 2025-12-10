@@ -27,13 +27,13 @@ const AIChatWidget: React.FC = () => {
 
     const userText = input.trim();
     setInput('');
-    
+
     // Optimistic update
     setMessages(prev => [...prev, { role: ChatRole.USER, text: userText }]);
     setIsLoading(true);
 
     const reply = await generateChefResponse(userText);
-    
+
     setMessages(prev => [...prev, { role: ChatRole.MODEL, text: reply }]);
     setIsLoading(false);
   };
@@ -43,11 +43,11 @@ const AIChatWidget: React.FC = () => {
   };
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end">
+    <div className="fixed bottom-24 right-6 z-50 flex flex-col items-end">
       {/* Chat Window */}
       {isOpen && (
         <div className="mb-4 w-80 sm:w-96 bg-stone-900 border border-gold-500/30 rounded-lg shadow-2xl overflow-hidden flex flex-col h-[500px] animate-in fade-in slide-in-from-bottom-10 duration-300">
-          
+
           {/* Header */}
           <div className="bg-stone-950 p-4 border-b border-gold-500/20 flex justify-between items-center">
             <div className="flex items-center gap-2 text-gold-400">
@@ -63,11 +63,10 @@ const AIChatWidget: React.FC = () => {
           <div className="flex-1 overflow-y-auto p-4 space-y-4 bg-stone-900/95">
             {messages.map((msg, idx) => (
               <div key={idx} className={`flex ${msg.role === ChatRole.USER ? 'justify-end' : 'justify-start'}`}>
-                <div className={`max-w-[80%] p-3 rounded-lg text-sm leading-relaxed ${
-                  msg.role === ChatRole.USER 
-                    ? 'bg-gold-600 text-white rounded-br-none' 
+                <div className={`max-w-[80%] p-3 rounded-lg text-sm leading-relaxed ${msg.role === ChatRole.USER
+                    ? 'bg-gold-600 text-white rounded-br-none'
                     : 'bg-stone-800 text-stone-200 border border-stone-700 rounded-bl-none'
-                }`}>
+                  }`}>
                   {msg.text}
                 </div>
               </div>
@@ -96,7 +95,7 @@ const AIChatWidget: React.FC = () => {
               placeholder="Ask about our Wagyu..."
               className="flex-1 bg-stone-900 text-white text-sm px-3 py-2 rounded border border-stone-800 focus:border-gold-500 focus:outline-none transition"
             />
-            <button 
+            <button
               onClick={handleSend}
               disabled={isLoading || !input.trim()}
               className="bg-gold-500 hover:bg-gold-400 disabled:opacity-50 text-stone-950 p-2 rounded transition-colors"
@@ -108,7 +107,7 @@ const AIChatWidget: React.FC = () => {
       )}
 
       {/* Toggle Button */}
-      <button 
+      <button
         onClick={() => setIsOpen(!isOpen)}
         className="group flex items-center gap-3 bg-gold-500 hover:bg-gold-400 text-stone-950 px-4 py-3 rounded-full shadow-lg shadow-gold-900/20 transition-all duration-300 hover:scale-105"
       >
@@ -116,8 +115,8 @@ const AIChatWidget: React.FC = () => {
           Ask the Chef
         </span>
         <div className="relative">
-            <MessageCircle size={24} className={isOpen ? 'scale-0 absolute' : 'scale-100 transition-transform'} />
-            <X size={24} className={isOpen ? 'scale-100' : 'scale-0 absolute transition-transform'} />
+          <MessageCircle size={24} className={isOpen ? 'scale-0 absolute' : 'scale-100 transition-transform'} />
+          <X size={24} className={isOpen ? 'scale-100' : 'scale-0 absolute transition-transform'} />
         </div>
       </button>
     </div>
